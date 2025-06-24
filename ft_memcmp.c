@@ -18,3 +18,19 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+/* 
+#include <stdio.h>
+int main(void)
+{
+	const char str1[] = "Hello, World!";
+	const char str2[] = "Hello, World!";
+	int result;
+
+	result = ft_memcmp(str1, str2, 13);
+	if (result == 0)
+		printf("As Strings são iguais.\n");
+	else
+		printf("As Strings são diferentes. Diferença: %d\n", result);
+
+	return 0;
+} */
