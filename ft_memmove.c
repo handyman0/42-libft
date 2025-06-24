@@ -2,24 +2,40 @@
 
 void *ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t i;
+	unsigned char *d;
+	const unsigned char *s;
+	size_t i = 0;
 
 	if (!dest && !src)
-		return (NULL);
-	if (!n)
-		return (dest);
-	if (dest > src)
+		return NULL;
+
+	d = (unsigned char *)dest;
+	s = (const unsigned char *)src;
+
+	if (d > s)
 	{
-		i = n - 1;
-		while (i--)
-			*(unsigned char *)(dest + i + 1) = *(unsigned char *)(src + i + 1);
-		*(unsigned char *)(dest + i + 1) = *(unsigned char *)(src + i + 1); 
+		while (n--)
+			d[n] = s[n];
 	}
 	else
 	{
-		i = 0;
-		while(i++ < n)
-			*(unsigned char *)(dest + i - 1) = *(unsigned char *)(src + i - 1);
+		while (i < n)
+		{
+			d[i] = s[i];
+			i++;
+		}
 	}
-	return (dest);
+	return dest;
 }
+
+/* #include <stdio.h>
+int main(void)
+{
+	char dest[50] = "Hello, World!";
+	const char src[] = "Goodbye, World!";
+	
+	ft_memmove(dest + 7, src, 15);
+	printf("%s\n", dest); // Expected output: "Hello, Goodbye, World!"
+	
+	return 0;
+} */
