@@ -13,7 +13,7 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (NULL);
 }
-#include <stdio.h>
+/* #include <stdio.h>
 int	main(void)
 {
 	const char	*str = "ola, mundo";
@@ -23,4 +23,4 @@ int	main(void)
 	else
 		printf("caractere não encontrado");
 	return (0);
-}
+} */
