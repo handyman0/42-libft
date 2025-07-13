@@ -1,18 +1,30 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/07/13 16:07:00 by lmelo-do          #+#    #+#             */
+/*   Updated: 2025/07/13 17:00:09 by lmelo-do         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	const unsigned char *start;
-	unsigned int byte; 
+	const unsigned char *ptr;
+	unsigned int target;
 	size_t	i;
 
-	start = (const unsigned char *)s;
-	byte = (unsigned int)c;
+	ptr = (const unsigned char *)s;
+	target = (unsigned char)c;
 	i = 0;
 	while (i < n)
 	{
-		if (start[i] == byte)
-			return ((void *)(start + i));
+		if (ptr[i] == target)
+			return ((void *)(ptr + i));
 		i++;
 	}
 	return (NULL);
