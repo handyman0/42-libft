@@ -6,9 +6,29 @@
 /*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 16:06:04 by lmelo-do          #+#    #+#             */
-/*   Updated: 2025/07/13 16:06:06 by lmelo-do         ###   ########.fr       */
+/*   Updated: 2025/07/13 20:02:38 by lmelo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+int	ft_atoi(const char *nptr)
+{
+	int	i;
+	int	sign;
+	int	num;
+
+	sign = 1;
+	i = 0;
+	num = 0;
+	while (nptr[i] == ' ' || nptr[i] == '\t' || nptr[i] == '\n'
+		|| nptr[i] == '\v' || nptr[i] == '\f' || nptr[i] == '\r')
+		i++;
+	if (nptr[i] == '-')
+		sign = -1;
+	if (nptr[i] == '-' || nptr[i] == '+')
+		i++;
+	while (nptr[i] >= '0' && nptr[i] <= '9')
+		num = num * 10 + (nptr[i++] - '0');
+	return ((int)(sign * num));
+}
