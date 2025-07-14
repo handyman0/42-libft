@@ -6,7 +6,7 @@
 /*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 16:07:28 by lmelo-do          #+#    #+#             */
-/*   Updated: 2025/07/13 16:07:29 by lmelo-do         ###   ########.fr       */
+/*   Updated: 2025/07/14 15:56:14 by lmelo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strdup(const char *s)
 	return (dup);
 }
 
-#include <stdio.h>
+/* #include <stdio.h>
 int	main(void)
 {
 	char	*String = "ola pessoal";
@@ -39,4 +39,4 @@ int	main(void)
 	printf("A nova string é: %s", NewString);
 	free(NewString);
 	return (0);
-}
+} */
