@@ -6,7 +6,7 @@
 /*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 16:07:17 by lmelo-do          #+#    #+#             */
-/*   Updated: 2025/07/13 16:40:56 by lmelo-do         ###   ########.fr       */
+/*   Updated: 2025/07/14 15:13:54 by lmelo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,6 @@ void	*ft_memset(void *mem, int byte, size_t n)
 
 	i = 0;
 	while (i < n)
-	{
-		*(char *)(mem + i) = byte;
-		i++;
-	}
+		*(char *)(mem + i++) = byte;
 	return (mem);
 }
