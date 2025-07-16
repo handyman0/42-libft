@@ -6,7 +6,7 @@
 /*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 16:07:54 by lmelo-do          #+#    #+#             */
-/*   Updated: 2025/07/13 19:09:31 by lmelo-do         ###   ########.fr       */
+/*   Updated: 2025/07/14 16:36:10 by lmelo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	while (i < len && big[i])
 	{
 		j = 0;
-		while ((big + i)[j] == little[j] && (i + j) < len)
+		while (big[i + j] == little[j] && (i + j) < len)
 		{
 			if (j == ft_strlen(little) - 1)
 				return ((char *)big + i);
