@@ -6,7 +6,7 @@
 /*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 16:36:49 by lmelo-do          #+#    #+#             */
-/*   Updated: 2025/07/16 22:00:29 by lmelo-do         ###   ########.fr       */
+/*   Updated: 2025/07/20 19:44:49 by lmelo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	real_len;
 	char	*p;
 
-	if (s ==  NULL)
+	if (s == NULL)
 		return (NULL);
 	if (start >= ft_strlen(s))
 		return (ft_strdup(""));

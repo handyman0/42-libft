@@ -6,7 +6,7 @@
 /*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 19:36:37 by lmelo-do          #+#    #+#             */
-/*   Updated: 2025/07/16 21:37:40 by lmelo-do         ###   ########.fr       */
+/*   Updated: 2025/07/20 19:43:14 by lmelo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_word_len(const char *s, char c)
 	int	i;
 
 	i = 0;
-	while(s[i] != c)
+	while (s[i] != c)
 		i++;
 	return (i);
 }
@@ -43,10 +43,10 @@ int	count_words(const char *s, char c)
 
 char	**ft_split(char const *s, char c)
 {
-	int	i;
-	int	j;
-	int	start;
-	char **newarray;
+	int		i;
+	int		j;
+	int		start;
+	char	**newarray;
 
 	j = 0;
 	i = 0;

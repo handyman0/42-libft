@@ -6,7 +6,7 @@
 /*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 16:07:08 by lmelo-do          #+#    #+#             */
-/*   Updated: 2025/07/13 16:49:12 by lmelo-do         ###   ########.fr       */
+/*   Updated: 2025/07/20 19:41:24 by lmelo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	char *d;
-	const char *s;
-	size_t i;
+	char			*d;
+	const char		*s;
+	size_t			i;
 
 	if ((!dest && !src) && n > 0)
 		return (NULL);

@@ -6,13 +6,13 @@
 /*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 16:08:02 by lmelo-do          #+#    #+#             */
-/*   Updated: 2025/07/13 17:02:12 by lmelo-do         ###   ########.fr       */
+/*   Updated: 2025/07/20 19:44:59 by lmelo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (c + 32);

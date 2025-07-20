@@ -6,7 +6,7 @@
 /*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 16:07:24 by lmelo-do          #+#    #+#             */
-/*   Updated: 2025/07/13 17:20:27 by lmelo-do         ###   ########.fr       */
+/*   Updated: 2025/07/20 19:43:25 by lmelo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,3 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return ((char *)s);
 }
-/* #include <stdio.h>
-int	main(void)
-{
-	const char	*str = "ola, mundo";
-	char	*ptr = ft_strchr(str, 'u');
-	if (ptr != NULL)
-		printf("Caractere encontrado: %c\n", *ptr);
-	else
-		printf("caractere não encontrado");
-	return (0);
-} */
