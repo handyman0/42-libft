@@ -6,10 +6,21 @@
 /*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 16:06:13 by lmelo-do          #+#    #+#             */
-/*   Updated: 2025/07/21 17:40:48 by lmelo-do         ###   ########.fr       */
+/*   Updated: 2025/07/21 19:53:46 by lmelo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_lstsize(t_list *lst){}
+int		ft_lstsize(t_list *lst)
+{
+	int		i;
+	
+	i = 0;
+	while (lst)
+	{
+		i++;
+		lst = lst->next;
+	}
+	return (i);
+}
