@@ -6,8 +6,13 @@
 /*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 16:38:54 by lmelo-do          #+#    #+#             */
-/*   Updated: 2025/07/13 16:39:19 by lmelo-do         ###   ########.fr       */
+/*   Updated: 2025/07/20 22:37:14 by lmelo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	ft_putchar_fd(char c, int fd)
+{
+	write(fd, &c, 1);
+}
