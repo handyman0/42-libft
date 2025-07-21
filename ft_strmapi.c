@@ -4,10 +4,12 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char			*result;
 	unsigned int	i;
+	size_t			len;
 
+	len = ft_strlen(s);
 	if (!s || !f)
 		return (NULL);
-	result = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
+	result = malloc(ft_strlen(s) + 1);
 	if (!result)
 		return (NULL);
 	i = 0;
