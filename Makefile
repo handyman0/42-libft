@@ -6,7 +6,7 @@
 #    By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/13 16:34:59 by lmelo-do          #+#    #+#              #
-#    Updated: 2025/07/14 17:30:56 by lmelo-do         ###   ########.fr        #
+#    Updated: 2025/07/21 17:32:33 by lmelo-do         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,13 +25,21 @@ SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 
 OBJS = ${SRCS:.c=.o}
 
+BNS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
+	ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
+
+BNS_OBJS = ${BNS:.c=.o}
+
 all: ${NAME}
 
 ${NAME}: ${OBJS}
 	ar rcs ${NAME} ${OBJS}
 
+bonus: ${OBJS} ${BNS_OBJS}
+	ar rcs ${NAME} ${OBJS} ${BNS_OBJS}
+
 clean:
-	rm -f ${OBJS}
+	rm -f ${OBJS} ${BNS_OBJS}
 
 fclean: clean
 	rm -f ${NAME}
