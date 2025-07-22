@@ -6,23 +6,13 @@
 /*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 19:36:37 by lmelo-do          #+#    #+#             */
-/*   Updated: 2025/07/20 19:43:14 by lmelo-do         ###   ########.fr       */
+/*   Updated: 2025/07/22 14:47:48 by lmelo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_word_len(const char *s, char c)
-{
-	int	i;
-
-	i = 0;
-	while (s[i] != c)
-		i++;
-	return (i);
-}
-
-int	count_words(const char *s, char c)
+static int	count_words(const char *s, char c)
 {
 	int	i;
 	int	count;
