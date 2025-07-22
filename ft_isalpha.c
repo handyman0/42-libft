@@ -6,13 +6,13 @@
 /*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 16:06:37 by lmelo-do          #+#    #+#             */
-/*   Updated: 2025/07/13 16:45:29 by lmelo-do         ###   ########.fr       */
+/*   Updated: 2025/07/22 16:04:55 by lmelo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(char str)
+int	ft_isalpha(int c)
 {
-	return ((str >= 'a' && str <= 'z') || (str >= 'A' && str <= 'Z'));
+	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z' ));
 }
