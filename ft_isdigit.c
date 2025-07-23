@@ -6,16 +6,13 @@
 /*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 16:06:50 by lmelo-do          #+#    #+#             */
-/*   Updated: 2025/07/13 16:46:11 by lmelo-do         ###   ########.fr       */
+/*   Updated: 2025/07/23 16:56:09 by lmelo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	ft_isdigit(int num)
+/* essa função só retorna se o valor digitado for um numero */
+int	ft_isdigit(int c)
 {
-	if (num >= '0' && num <= '9')
-		return (1);
-	else
-		return (0);
+	return (c >= '0' && c <= '9');
 }

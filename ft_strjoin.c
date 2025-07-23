@@ -6,12 +6,14 @@
 /*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 17:30:10 by lmelo-do          #+#    #+#             */
-/*   Updated: 2025/07/14 19:28:37 by lmelo-do         ###   ########.fr       */
+/*   Updated: 2025/07/23 18:48:26 by lmelo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/* função que retorna dois strings e coloca em novo
+ele copia um string para o novo
+depois, concatena. */
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*newstring;

@@ -6,12 +6,12 @@
 /*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 16:07:48 by lmelo-do          #+#    #+#             */
-/*   Updated: 2025/07/13 18:18:55 by lmelo-do         ###   ########.fr       */
+/*   Updated: 2025/07/23 18:16:35 by lmelo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/* função que compara duas strings ate o n */
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
