@@ -6,7 +6,7 @@
 /*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 16:08:15 by lmelo-do          #+#    #+#             */
-/*   Updated: 2025/07/22 16:05:05 by lmelo-do         ###   ########.fr       */
+/*   Updated: 2025/07/23 17:06:48 by lmelo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,12 @@ typedef struct s_list
 	struct s_list	*next;
 }					t_list;
 
-size_t	ft_strlen(const char *str);
+size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 char	*ft_strdup(const char *s);
 void	ft_bzero(void *mem, size_t n);
-int		ft_isalpha(int str);
-int		ft_isdigit(int num);
+int		ft_isalpha(int c);
+int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
