@@ -6,20 +6,17 @@
 /*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 16:06:13 by lmelo-do          #+#    #+#             */
-/*   Updated: 2025/07/20 19:40:02 by lmelo-do         ###   ########.fr       */
+/*   Updated: 2025/07/23 20:47:55 by lmelo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/* Preenche 'n' bytes da memória apontada por 'mem' com zeros */
 void	ft_bzero(void *mem, size_t n)
 {
-	size_t	i;
+	char	*ptr;
 
-	i = 0;
-	while (i < n)
-	{
-		*(char *)(mem + i) = 0;
-		i++;
-	}
+	ptr = (char *)mem;
+	while (n--)
+		*ptr++ = 0;
 }
