@@ -6,7 +6,7 @@
 /*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 16:07:13 by lmelo-do          #+#    #+#             */
-/*   Updated: 2025/07/20 19:42:39 by lmelo-do         ###   ########.fr       */
+/*   Updated: 2025/07/23 20:54:37 by lmelo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,15 +38,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-/* #include <stdio.h>
-int main(void)
-{
-	char dest[50] = "Hello, World!";
-	const char src[] = "Goodbye, World!";
-
-	ft_memmove(dest + 7, src, 15);
-	printf("%s\n", dest); // Expected output: "Hello, Goodbye, World!"
-
-	return 0;
-} */
