@@ -6,27 +6,29 @@
 /*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 19:36:37 by lmelo-do          #+#    #+#             */
-/*   Updated: 2025/07/22 14:47:48 by lmelo-do         ###   ########.fr       */
+/*   Updated: 2025/07/24 20:42:06 by lmelo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/* Conta quantas "palavras" existem separadas por c */
 static int	count_words(const char *s, char c)
 {
-	int	i;
 	int	count;
+	int	in_word;
 
-	i = 0;
 	count = 0;
-	while (s[i])
+	in_word = 0;
+	while (*s)
 	{
-		while (s[i] == c)
-			i++;
-		if (s[i])
+		if (*s != c && in_word == 0)
+		{
+			in_word = 1;
 			count++;
-		while (s[i] && s[i] != c)
-			i++;
+		}
+		else if (*s == c)
+			in_word = 0;
+		s++;
 	}
 	return (count);
 }
@@ -40,7 +42,7 @@ char	**ft_split(char const *s, char c)
 
 	j = 0;
 	i = 0;
-	newarray = malloc((count_words(s, c) + 1) * sizeof(char *));
+	newarray = ft_calloc((count_words(s, c) + 1), sizeof(char *));
 	if (!newarray)
 		return (NULL);
 	while (s[i])
@@ -53,6 +55,5 @@ char	**ft_split(char const *s, char c)
 		if (i > start)
 			newarray[j++] = ft_substr(s, start, i - start);
 	}
-	newarray[j] = NULL;
 	return (newarray);
 }
