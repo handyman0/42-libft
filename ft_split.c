@@ -6,12 +6,12 @@
 /*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 19:36:37 by lmelo-do          #+#    #+#             */
-/*   Updated: 2025/07/24 20:42:06 by lmelo-do         ###   ########.fr       */
+/*   Updated: 2025/07/25 00:56:14 by lmelo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/* Conta quantas "palavras" existem separadas por c */
+
 static int	count_words(const char *s, char c)
 {
 	int	count;

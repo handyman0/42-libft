@@ -6,7 +6,7 @@
 /*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 16:36:49 by lmelo-do          #+#    #+#             */
-/*   Updated: 2025/07/20 19:44:49 by lmelo-do         ###   ########.fr       */
+/*   Updated: 2025/07/25 01:02:55 by lmelo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (len > real_len)
 		len = real_len;
 	p = ft_calloc(len + 1, sizeof(char));
+	if (!p)
+		return (NULL);
 	ft_memcpy(p, s + start, len);
 	return (p);
 }
