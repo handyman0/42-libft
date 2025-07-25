@@ -6,7 +6,7 @@
 /*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 16:07:13 by lmelo-do          #+#    #+#             */
-/*   Updated: 2025/07/25 01:21:49 by lmelo-do         ###   ########.fr       */
+/*   Updated: 2025/07/25 01:23:11 by lmelo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	char		*d;
 	const char	*s;
-	size_t				i;
+	size_t		i;
 
 	if (dest == src || n == 0)
 		return (dest);
