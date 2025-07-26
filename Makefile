@@ -6,7 +6,7 @@
 #    By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/13 16:34:59 by lmelo-do          #+#    #+#              #
-#    Updated: 2025/07/21 17:32:33 by lmelo-do         ###   ########.fr        #
+#    Updated: 2025/07/25 02:27:23 by lmelo-do         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,24 +29,28 @@ BNS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
 	ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
 
 BNS_OBJS = ${BNS:.c=.o}
+BONUS_DONE = .bonus_done
 
 all: ${NAME}
 
 ${NAME}: ${OBJS}
 	ar rcs ${NAME} ${OBJS}
 
-bonus: ${OBJS} ${BNS_OBJS}
+bonus: ${BONUS_DONE}
+
+${BONUS_DONE}: ${OBJS} ${BNS_OBJS}
 	ar rcs ${NAME} ${OBJS} ${BNS_OBJS}
+	@touch ${BONUS_DONE}
 
 clean:
 	rm -f ${OBJS} ${BNS_OBJS}
 
 fclean: clean
-	rm -f ${NAME}
+	rm -f ${NAME} {BONUS_DONE}
 
 re: fclean all
 
 %.o:%.c
 	${CC} ${CFLAGS} -c $< -o $@
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus
