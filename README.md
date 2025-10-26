@@ -1,6 +1,5 @@
-```markdown
 <h1 align="center">
-  <img alt="Libft" width="200px" height="200px" src="" />
+  <img alt="Libft" width="200px" height="200px" src="https://github.com/handyman0/42-libft/blob/main/libfte.png" />
 </h1>
 
 > 42sp School project
@@ -33,59 +32,59 @@ The code in this repository follows the rules of the **42 Norminette**.
 ## Index
 
 ### Functions from `<ctype.h>` library
-* [`ft_isascii`](ft_isascii.c) - Test for ASCII character
-* [`ft_isalpha`](ft_isalpha.c) - Test for alphabetic character
-* [`ft_isdigit`](ft_isdigit.c) - Test for decimal digit
-* [`ft_isalnum`](ft_isalnum.c) - Test for alphanumeric character
-* [`ft_isprint`](ft_isprint.c) - Test for printable character
-* [`ft_tolower`](ft_tolower.c) - Convert to lowercase
-* [`ft_toupper`](ft_toupper.c) - Convert to uppercase
+* [`ft_isascii`](https://github.com/handyman0/42-libft/blob/main/ft_isascii.c) - Test for ASCII character
+* [`ft_isalpha`](https://github.com/handyman0/42-libft/blob/main/ft_isalpha.c) - Test for alphabetic character
+* [`ft_isdigit`](https://github.com/handyman0/42-libft/blob/main/ft_isdigit.c) - Test for decimal digit
+* [`ft_isalnum`](https://github.com/handyman0/42-libft/blob/main/ft_isalnum.c) - Test for alphanumeric character
+* [`ft_isprint`](https://github.com/handyman0/42-libft/blob/main/ft_isprint.c) - Test for printable character
+* [`ft_tolower`](https://github.com/handyman0/42-libft/blob/main/ft_tolower.c) - Convert to lowercase
+* [`ft_toupper`](https://github.com/handyman0/42-libft/blob/main/ft_toupper.c) - Convert to uppercase
 
 ### Functions from `<stdlib.h>` library
-* [`ft_atoi`](ft_atoi.c) - Convert ASCII string to integer
-* [`ft_calloc`](ft_calloc.c) - Allocate and zero-initialize array
+* [`ft_atoi`](https://github.com/handyman0/42-libft/blob/main/ft_atoi.c) - Convert ASCII string to integer
+* [`ft_calloc`](https://github.com/handyman0/42-libft/blob/main/ft_calloc.c) - Allocate and zero-initialize array
 
 ### Functions from `<strings.h>` library
-* [`ft_bzero`](ft_bzero.c) - Zero a byte string
-* [`ft_memset`](ft_memset.c) - Fill memory with constant byte
-* [`ft_memchr`](ft_memchr.c) - Scan memory for character
-* [`ft_memcmp`](ft_memcmp.c) - Compare memory areas
-* [`ft_memmove`](ft_memmove.c) - Copy memory area (handling overlap)
-* [`ft_memcpy`](ft_memcpy.c) - Copy memory area
+* [`ft_bzero`](https://github.com/handyman0/42-libft/blob/main/ft_bzero.c) - Zero a byte string
+* [`ft_memset`](https://github.com/handyman0/42-libft/blob/main/ft_memset.c) - Fill memory with constant byte
+* [`ft_memchr`](https://github.com/handyman0/42-libft/blob/main/ft_memchr.c) - Scan memory for character
+* [`ft_memcmp`](https://github.com/handyman0/42-libft/blob/main/ft_memcmp.c) - Compare memory areas
+* [`ft_memmove`](https://github.com/handyman0/42-libft/blob/main/ft_memmove.c) - Copy memory area (handling overlap)
+* [`ft_memcpy`](https://github.com/handyman0/42-libft/blob/main/ft_memcpy.c) - Copy memory area
 
 ### Functions from `<string.h>` library
-* [`ft_strlen`](ft_strlen.c) - Find length of string
-* [`ft_strchr`](ft_strchr.c) - Locate character in string
-* [`ft_strrchr`](ft_strrchr.c) - Locate last occurrence of character
-* [`ft_strnstr`](ft_strnstr.c) - Locate substring in string
-* [`ft_strncmp`](ft_strncmp.c) - Compare two strings (size-limited)
-* [`ft_strdup`](ft_strdup.c) - Duplicate string
-* [`ft_strlcpy`](ft_strlcpy.c) - Size-bounded string copy
-* [`ft_strlcat`](ft_strlcat.c) - Size-bounded string concatenation
+* [`ft_strlen`](https://github.com/handyman0/42-libft/blob/main/ft_strlen.c) - Find length of string
+* [`ft_strchr`](https://github.com/handyman0/42-libft/blob/main/ft_strchr.c) - Locate character in string
+* [`ft_strrchr`](https://github.com/handyman0/42-libft/blob/main/ft_strrchr.c) - Locate last occurrence of character
+* [`ft_strnstr`](https://github.com/handyman0/42-libft/blob/main/ft_strnstr.c) - Locate substring in string
+* [`ft_strncmp`](https://github.com/handyman0/42-libft/blob/main/ft_strncmp.c) - Compare two strings (size-limited)
+* [`ft_strdup`](https://github.com/handyman0/42-libft/blob/main/ft_strdup.c) - Duplicate string
+* [`ft_strlcpy`](https://github.com/handyman0/42-libft/blob/main/ft_strlcpy.c) - Size-bounded string copy
+* [`ft_strlcat`](https://github.com/handyman0/42-libft/blob/main/ft_strlcat.c) - Size-bounded string concatenation
 
 ### Non-standard functions
-* [`ft_itoa`](ft_itoa.c) - Convert integer to string
-* [`ft_substr`](ft_substr.c) - Extract substring from string
-* [`ft_strtrim`](ft_strtrim.c) - Trim characters from start/end
-* [`ft_strjoin`](ft_strjoin.c) - Concatenate two strings
-* [`ft_split`](ft_split.c) - Split string into array
-* [`ft_strmapi`](ft_strmapi.c) - Apply function to each character
-* [`ft_striteri`](ft_striteri.c) - Apply function to each character (with index)
-* [`ft_putchar_fd`](ft_putchar_fd.c) - Output character to file descriptor
-* [`ft_putstr_fd`](ft_putstr_fd.c) - Output string to file descriptor
-* [`ft_putendl_fd`](ft_putendl_fd.c) - Output string + newline to file descriptor
-* [`ft_putnbr_fd`](ft_putnbr_fd.c) - Output number to file descriptor
+* [`ft_itoa`](https://github.com/handyman0/42-libft/blob/main/ft_itoa.c) - Convert integer to string
+* [`ft_substr`](https://github.com/handyman0/42-libft/blob/main/ft_substr.c) - Extract substring from string
+* [`ft_strtrim`](https://github.com/handyman0/42-libft/blob/main/ft_strtrim.c) - Trim characters from start/end
+* [`ft_strjoin`](https://github.com/handyman0/42-libft/blob/main/ft_strjoin.c) - Concatenate two strings
+* [`ft_split`](https://github.com/handyman0/42-libft/blob/main/ft_split.c) - Split string into array
+* [`ft_strmapi`](https://github.com/handyman0/42-libft/blob/main/ft_strmapi.c) - Apply function to each character
+* [`ft_striteri`](https://github.com/handyman0/42-libft/blob/main/ft_striteri.c) - Apply function to each character (with index)
+* [`ft_putchar_fd`](https://github.com/handyman0/42-libft/blob/main/ft_putchar_fd.c) - Output character to file descriptor
+* [`ft_putstr_fd`](https://github.com/handyman0/42-libft/blob/main/ft_putstr_fd.c) - Output string to file descriptor
+* [`ft_putendl_fd`](https://github.com/handyman0/42-libft/blob/main/ft_putendl_fd.c) - Output string + newline to file descriptor
+* [`ft_putnbr_fd`](https://github.com/handyman0/42-libft/blob/main/ft_putnbr_fd.c) - Output number to file descriptor
 
 ### Linked list functions *(bonus)*
-* [`ft_lstnew`](ft_lstnew_bonus.c) - Create new list element
-* [`ft_lstsize`](ft_lstsize_bonus.c) - Count list elements
-* [`ft_lstlast`](ft_lstlast_bonus.c) - Find last element
-* [`ft_lstadd_back`](ft_lstadd_back_bonus.c) - Add element to end
-* [`ft_lstadd_front`](ft_lstadd_front_bonus.c) - Add element to beginning
-* [`ft_lstdelone`](ft_lstdelone_bonus.c) - Delete element
-* [`ft_lstclear`](ft_lstclear_bonus.c) - Clear list
-* [`ft_lstiter`](ft_lstiter_bonus.c) - Iterate through list
-* [`ft_lstmap`](ft_lstmap_bonus.c) - Apply function to list
+* [`ft_lstnew`](https://github.com/handyman0/42-libft/blob/main/ft_lstnew_bonus.c) - Create new list element
+* [`ft_lstsize`](https://github.com/handyman0/42-libft/blob/main/ft_lstsize_bonus.c) - Count list elements
+* [`ft_lstlast`](https://github.com/handyman0/42-libft/blob/main/ft_lstlast_bonus.c) - Find last element
+* [`ft_lstadd_back`](https://github.com/handyman0/42-libft/blob/main/ft_lstadd_back_bonus.c) - Add element to end
+* [`ft_lstadd_front`](https://github.com/handyman0/42-libft/blob/main/ft_lstadd_front_bonus.c) - Add element to beginning
+* [`ft_lstdelone`](https://github.com/handyman0/42-libft/blob/main/ft_lstdelone_bonus.c) - Delete element
+* [`ft_lstclear`](https://github.com/handyman0/42-libft/blob/main/ft_lstclear_bonus.c) - Clear list
+* [`ft_lstiter`](https://github.com/handyman0/42-libft/blob/main/ft_lstiter_bonus.c) - Iterate through list
+* [`ft_lstmap`](https://github.com/handyman0/42-libft/blob/main/ft_lstmap_bonus.c) - Apply function to list
 
 ## Requirements
 The library is written in **C language** and needs the `gcc` or `clang` compiler, with `<stdlib.h>` and `<unistd.h>` standard libraries to run.
@@ -97,47 +96,3 @@ The library is written in **C language** and needs the `gcc` or `clang` compiler
 For **basic** functions:
 ```bash
 make
-```
-
-For **bonus** functions:
-```bash
-make bonus
-```
-
-### 2. Cleaning files
-
-To clean object files:
-```bash
-make clean
-```
-
-To clean all generated files:
-```bash
-make fclean
-```
-
-### 3. Recompile
-```bash
-make re
-```
-
-### 4. Using in your code
-```c
-#include "libft.h"
-```
-
-## Testing
-This library has been tested with [Francinette](https://github.com/xicodomingues/francinette).
-```
-
-**Para completar:**
-
-1. **Coloque o caminho correto para suas imagens** no lugar de `caminho/para/sua/`
-2. **Todos os links para os arquivos .c** já estão no formato correto (apontando para os arquivos no mesmo repositório)
-3. **Mantenha a estrutura de pastas** igual à do seu repositório
-
-**Dica extra:** Se quiser adicionar uma badge de status do projeto, você pode usar:
-
-```markdown
-![Libft](https://github.com/seu-usuario/libft/workflows/Libft/badge.svg)
-```
