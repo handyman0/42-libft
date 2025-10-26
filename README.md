@@ -93,6 +93,29 @@ The library is written in **C language** and needs the `gcc` or `clang` compiler
 
 ### 1. Compiling the library
 
-For **basic** functions:
-```bash
-make
+For __basic__ functions:
+```
+$ make
+```
+
+For __bonus__ functions:
+```
+$ make bonus
+```
+
+### 2. Cleaning all binary (.o) and executable files (.a)
+
+To delete all files generated with make, go to the path and run:
+```
+$ make fclean
+```
+
+### 3. Using it in your code
+
+To use the library functions in your code, simply include this header:
+```
+#include "libft.h"
+```
+
+## Testing
+This library have been tested with [Francinette](https://github.com/xicodomingues/francinette).
